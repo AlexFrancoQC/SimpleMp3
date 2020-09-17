@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginVertical="100dp"
+    android:src="@drawable/ic_baseline_music_note_24">
+
+</ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/player_position"
+           android:text="00:00"
+           android:textStyle="bold"
+           android:textColor="@android:color/white"></TextView>
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/seek_bar"></SeekBar>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_duration"
+            android:text="00:00"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="100dp"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/bt_rew"
+                android:src="@drawable/ic_baseline_fast_rewind_24"></ImageView>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/bt_play"
+                android:src="@drawable/ic_baseline_play"></ImageView>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/bt_pause"
+                android:visibility="gone"
+                android:src="@drawable/ic_baseline_pause"></ImageView>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/bt_ff"
+                android:src="@drawable/ic_baseline_fast"></ImageView>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
